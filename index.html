@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOCK'EM</title>
+    <style>
+        body{
+            background: #0f0f0f;
+        }
+
+        #score{
+            color: #fff;
+            font-family: sans-serif;
+            font-size: 2em;
+            text-align: center;
+        }
+
+        #nextPieceTxt{
+            color: #fff;
+            font-family: sans-serif;
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        .container{
+            margin: 10px;
+            font-size: 2em;
+        }
+
+        .flex{
+            align-items: flex-start;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #blocks{
+            background: radial-gradient(#2a2c2e, black);
+            border: solid .2em #fff;
+            height: 85vh;
+            margin-bottom: 1em;
+        }
+
+        #nextPiece{
+            background: radial-gradient(#2a2c2e, black);
+            border: solid .1em #fff;
+            height: 15vh;
+        }
+
+        #nextDiv{
+            margin-left: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class='container'>
+        
+        <div class = 'flex'>
+            <div>
+                <div id='score'></div>
+                <canvas id="blocks" width=240 height=400></canvas>
+            </div>
+            <div id="nextDiv">
+                <p></p>
+                <div id='nextPieceTxt'>Next Piece</div>
+                <canvas id="nextPiece" width=100 height=100></canvas>
+            </div>
+            
+            <script src="blocks.js"></script>
+        </div>
+    </div>
+</body>
+</html>
