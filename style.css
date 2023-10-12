@@ -13,7 +13,7 @@ body{
 }
 
 .container{
-    margin: 10px;
+    margin: 0px;
     font-size: 2em;
 }
 
@@ -27,7 +27,7 @@ body{
 #blocks{
     background: radial-gradient(#2a2c2e, black);
     border: solid .2em white;
-    height: 85vh;
+    height: 80vh;
     margin-bottom: 1em;
 }
 
