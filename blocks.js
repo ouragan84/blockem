@@ -283,8 +283,8 @@ document.addEventListener('keydown', event => {
             break;
     }
 
-    if(["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].indexOf(e.code) > -1) {
-        e.preventDefault();
+    if(["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].indexOf(event.code) > -1) {
+        event.preventDefault();
     }
 });
 
