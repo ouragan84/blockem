@@ -264,10 +264,6 @@ const player = {
 };
 document.addEventListener('keydown', event => {
     
-    if(["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].indexOf(e.code) > -1) {
-        e.preventDefault();
-    }
-    
     switch(event.keyCode){
         case 37:
             playerMove(-1);
@@ -285,6 +281,10 @@ document.addEventListener('keydown', event => {
         case 87:
             playerRotate(-1);
             break;
+    }
+
+    if(["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].indexOf(e.code) > -1) {
+        e.preventDefault();
     }
 });
 
