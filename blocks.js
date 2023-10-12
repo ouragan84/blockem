@@ -262,8 +262,12 @@ const player = {
     matrix: null,
     score: 0,
 };
-
 document.addEventListener('keydown', event => {
+    
+    if(["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].indexOf(e.code) > -1) {
+        e.preventDefault();
+    }
+    
     switch(event.keyCode){
         case 37:
             playerMove(-1);
